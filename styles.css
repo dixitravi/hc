@@ -47,13 +47,14 @@ body {
 }
 
 .settings-icon {
-  position: absolute;
+  position: fixed; /* Changed from absolute to fixed to follow scroll */
   top: 16px;
   right: 16px;
   width: 36px;
   height: 36px;
   cursor: pointer;
   transition: transform 0.3s ease;
+  z-index: 999; /* Added z-index to keep icon above content */
 }
 
 .settings-icon:hover {
@@ -122,7 +123,7 @@ body {
 
 .footer-image {
   width: 100%;
-  max-width: 200px;
+  max-width: 400px;
   height: auto;
   display: block;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
@@ -263,7 +264,7 @@ body.dark-mode .footer-image {
   }
 
   .footer-image {
-    max-width: 200px;
+    max-width: 300px;
   }
 
   .settings-panel {
