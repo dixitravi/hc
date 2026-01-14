@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tiro Devanagari Hindi", serif;
+  background: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-section {
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    #ff6f3c 0%,
+    #ff9966 15%,
+    #ffb84d 35%,
+    #ffd699 50%,
+    #ffe6cc 70%,
+    #fff5eb 85%,
+    #ffffff 100%
+  );
+  padding: 40px 20px 60px 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.header-image {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hanuman-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.settings-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.settings-icon:hover {
+  transform: rotate(45deg);
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  background: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #8b4513;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+
+.om {
+  font-size: 2.5rem;
+  color: #8b4513;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #8b4513;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #b8470e;
+  margin: 30px 0 20px 0;
+}
+
+.verse {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #8b4513;
+  margin: 10px 0;
+  padding: 5px 20px;
+}
+
+.decorative-line {
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #8b4513, transparent);
+  margin: 30px auto;
+  opacity: 0.3;
+}
+
+.footer-ornament {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.footer-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.settings-panel {
+  position: fixed;
+  top: -600px;
+  right: 6px;
+  width: 60px;
+  background: linear-gradient(180deg, #5c3d2e 0%, #3d2817 100%);
+  border-radius: 30px;
+  padding: 15px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: top 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.5s ease, visibility 0.5s ease;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.settings-panel.active {
+  top: 6px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.settings-panel.closing {
+  top: -600px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.panel-button {
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.panel-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.panel-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.panel-separator {
+  width: 35px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 5px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+body.dark-mode {
+  background: #181818;
+  color: #e0e0e0;
+}
+
+body.dark-mode .header-section {
+  background: linear-gradient(
+    to bottom,
+    #4a2c1a 0%,
+    #5c3a24 15%,
+    #6e4829 35%,
+    #7a5230 50%,
+    #8a6240 70%,
+    #9a7250 85%,
+    #181818 100%
+  );
+}
+
+body.dark-mode .container {
+  background: #181818;
+}
+
+body.dark-mode .title,
+body.dark-mode .section-title,
+body.dark-mode .verse,
+body.dark-mode .subtitle {
+  color: #d4a574;
+}
+
+body.dark-mode .footer-image {
+  filter: invert(1) drop-shadow(0 4px 8px rgba(255, 255, 255, 0.1));
+}
+
+@media (max-width: 600px) {
+  .header-section {
+    padding: 30px 15px 50px 15px;
+  }
+
+  .header-image {
+    max-width: 300px;
+  }
+
+  .container {
+    padding: 20px 15px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .verse {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+
+  .footer-image {
+    max-width: 200px;
+  }
+
+  .settings-panel {
+    right: 10px;
+    width: 70px;
+    padding: 15px 8px;
+  }
+
+  .panel-button {
+    width: 45px;
+    height: 45px;
+  }
+
+  .panel-button svg {
+    width: 24px;
+    height: 24px;
+  }
+}

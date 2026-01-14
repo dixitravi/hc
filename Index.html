@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ॐ हनुमान चालीसा ॐ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Added audio element that plays once on page load -->
+  <audio id="introAudio">
+    <source src="recording.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="header-section fade-in">
+    <svg class="settings-icon" id="settingsToggle" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_2307_3140)">
+        <path d="M34 20.26V15.36L29.86 14L29.3 12.56L31.3 8.56L27.78 4.92L23.78 6.92L22.34 6.44L20.72 2H15.72L14.34 6.4L12.9 6.96L8.48 4.76L4.96 8.26L7.24 12.5L6.5 14L2 15.52V20.44L6.58 21.88L7.22 23.3L5.22 27.62L8.74 31.1L12.98 28.9L14.46 29.56L15.88 34H20.94L22.32 29.52L23.78 28.88L27.9 30.76L31.38 27.3L29.38 23.3L29.82 21.88L34 20.26ZM28.8 26.86L27.44 28.2L23.82 26.56L20.58 28L19.36 32H17.36L16 28L12.74 26.52L8.96 28.52L7.62 27.2L9.48 23.38L8.14 20.12L4.14 18.88V17.02L8 15.68L9.62 12.46L7.62 8.64L8.92 7.36L12.92 9.36L16 8L17.22 4.12H19.22L20.62 8.12L23.88 9.22L27.36 7.5L28.7 8.84L27 12.42L28.26 15.64L31.9 16.88V18.76L28 20.16L27.02 23.42L28.74 26.86H28.8Z" fill="#444444"/>
+        <path d="M18 12.18C16.8498 12.184 15.7265 12.5286 14.772 13.1706C13.8176 13.8125 13.0747 14.7228 12.6373 15.7866C12.1999 16.8504 12.0875 18.02 12.3143 19.1476C12.5411 20.2753 13.097 21.3104 13.9117 22.1224C14.7264 22.9343 15.7635 23.4866 16.8919 23.7096C18.0203 23.9325 19.1895 23.8161 20.2518 23.375C21.3141 22.934 22.2219 22.188 22.8605 21.2313C23.4992 20.2747 23.84 19.1502 23.84 18C23.84 17.234 23.6888 16.4756 23.3951 15.7682C23.1013 15.0607 22.6709 14.4183 22.1283 13.8776C21.5857 13.3369 20.9418 12.9086 20.2334 12.6173C19.5249 12.326 18.766 12.1774 18 12.18ZM18 21.66C17.2731 21.6521 16.5648 21.429 15.9645 21.019C15.3642 20.609 14.8987 20.0304 14.6269 19.3561C14.3551 18.6819 14.2891 17.9422 14.4372 17.2305C14.5853 16.5188 14.9409 15.8668 15.4591 15.357C15.9774 14.8471 16.635 14.5022 17.349 14.3657C18.063 14.2292 18.8015 14.3072 19.4713 14.5899C20.141 14.8727 20.712 15.3474 21.1122 15.9543C21.5124 16.5612 21.7239 17.273 21.72 18C21.7094 18.9778 21.3122 19.9117 20.6152 20.5975C19.9181 21.2834 18.9779 21.6653 18 21.66Z" fill="#444444"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_2307_3140">
+          <rect width="32" height="32" fill="white" transform="translate(2 2)"/>
+        </clipPath>
+      </defs>
+    </svg>
+    
+    <div class="header-image">
+      <img src="images/mobile-header.png" alt="Hanuman Ji" class="hanuman-image">
+    </div>
+  </div>
+
+  <div class="settings-panel" id="settingsPanel">
+    <div class="panel-button" id="panelSettingsIcon">
+      <svg width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_panel)">
+          <path d="M34 20.26V15.36L29.86 14L29.3 12.56L31.3 8.56L27.78 4.92L23.78 6.92L22.34 6.44L20.72 2H15.72L14.34 6.4L12.9 6.96L8.48 4.76L4.96 8.26L7.24 12.5L6.5 14L2 15.52V20.44L6.58 21.88L7.22 23.3L5.22 27.62L8.74 31.1L12.98 28.9L14.46 29.56L15.88 34H20.94L22.32 29.52L23.78 28.88L27.9 30.76L31.38 27.3L29.38 23.3L29.82 21.88L34 20.26ZM28.8 26.86L27.44 28.2L23.82 26.56L20.58 28L19.36 32H17.36L16 28L12.74 26.52L8.96 28.52L7.62 27.2L9.48 23.38L8.14 20.12L4.14 18.88V17.02L8 15.68L9.62 12.46L7.62 8.64L8.92 7.36L12.92 9.36L16 8L17.22 4.12H19.22L20.62 8.12L23.88 9.22L27.36 7.5L28.7 8.84L27 12.42L28.26 15.64L31.9 16.88V18.76L28 20.16L27.02 23.42L28.74 26.86H28.8Z" fill="white"/>
+          <path d="M18 12.18C16.8498 12.184 15.7265 12.5286 14.772 13.1706C13.8176 13.8125 13.0747 14.7228 12.6373 15.7866C12.1999 16.8504 12.0875 18.02 12.3143 19.1476C12.5411 20.2753 13.097 21.3104 13.9117 22.1224C14.7264 22.9343 15.7635 23.4866 16.8919 23.7096C18.0203 23.9325 19.1895 23.8161 20.2518 23.375C21.3141 22.934 22.2219 22.188 22.8605 21.2313C23.4992 20.2747 23.84 19.1502 23.84 18C23.84 17.234 23.6888 16.4756 23.3951 15.7682C23.1013 15.0607 22.6709 14.4183 22.1283 13.8776C21.5857 13.3369 20.9418 12.9086 20.2334 12.6173C19.5249 12.326 18.766 12.1774 18 12.18ZM18 21.66C17.2731 21.6521 16.5648 21.429 15.9645 21.019C15.3642 20.609 14.8987 20.0304 14.6269 19.3561C14.3551 18.6819 14.2891 17.9422 14.4372 17.2305C14.5853 16.5188 14.9409 15.8668 15.4591 15.357C15.9774 14.8471 16.635 14.5022 17.349 14.3657C18.063 14.2292 18.8015 14.3072 19.4713 14.5899C20.141 14.8727 20.712 15.3474 21.1122 15.9543C21.5124 16.5612 21.7239 17.273 21.72 18C21.7094 18.9778 21.3122 19.9117 20.6152 20.5975C19.9181 21.2834 18.9779 21.6653 18 21.66Z" fill="white"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_panel">
+            <rect width="32" height="32" fill="white" transform="translate(2 2)"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+
+    <div class="panel-button">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 6V18M18 6L10 12L18 18V6Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <div class="panel-separator"></div>
+
+    <div class="panel-button" id="playBtn">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 5.14V19.14L19 12.14L8 5.14Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <div class="panel-button hidden" id="pauseBtn">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="6" y="4" width="4" height="16" fill="white"/>
+        <rect x="14" y="4" width="4" height="16" fill="white"/>
+      </svg>
+    </div>
+
+    <div class="panel-button">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 6V18M6 18L14 12L6 6V18Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <div class="panel-separator"></div>
+
+    <div class="panel-button" id="zoomOut">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="9" stroke="white" stroke-width="2"/>
+        <line x1="8" y1="12" x2="16" y2="12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <div class="panel-button" id="zoomIn">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="9" stroke="white" stroke-width="2"/>
+        <line x1="12" y1="8" x2="12" y2="16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <line x1="8" y1="12" x2="16" y2="12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <div class="panel-separator"></div>
+
+    <div class="panel-button" id="lightMode">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="5" fill="white"/>
+        <line x1="12" y1="1" x2="12" y2="3" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <line x1="12" y1="21" x2="12" y2="23" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <line x1="1" y1="12" x2="3" y2="12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <line x1="21" y1="12" x2="23" y2="12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <div class="panel-button hidden" id="darkMode">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="white"/>
+      </svg>
+    </div>
+
+    <div class="panel-separator"></div>
+
+    <div class="panel-button">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <path d="M14 4H20M20 4V10M20 4L10 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 class="title fade-in">
+      <span class="om">ॐ</span> - हनुमान चालीसा - <span class="om">ॐ</span>
+    </h1>
+    
+    <p class="subtitle fade-in">जय श्री राम * जय श्री राम * जय श्री राम * जय श्री राम</p>
+
+    <div class="decorative-line"></div>
+
+    <h2 class="section-title fade-in">दोहा</h2>
+    
+    <p class="verse fade-in">श्रीगुरु चरन सरोज रज, निज मनु मुकुरु सुधारि । <br />बरनऊं रघुबर बिमल जसु, जो दायकु फल चारि ॥</p>
+    
+    <p class="verse fade-in">बुद्धिहीन तनु जानिकै, सुमिरौं पवन-कुमार। <br />बल बुद्धि बिद्या देहु मोहिं, हरहु कलेस बिकार॥</p>
+
+    <div class="decorative-line"></div>
+
+    <h2 class="section-title fade-in">चौपाई</h2>
+    
+    <p class="verse fade-in">जय हनुमान ज्ञान गुन सागर। <br />जय कपीस तिहुं लोक उजागर॥</p>
+    
+    <p class="verse fade-in">रामदूत अतुलित बल धामा। <br />अंजनि-पुत्र पवनसुत नामा॥</p>
+    
+    <p class="verse fade-in">महाबीर बिक्रम बजरंगी। <br />कुमति निवार सुमति के संगी॥</p>
+    
+    <p class="verse fade-in">कंचन बरन बिराज सुबेसा। <br />कानन कुंडल कुंचित केसा॥</p>
+    
+    <p class="verse fade-in">हाथ बज्र औ ध्वजा बिराजै। <br />कांधे मूंज जनेऊ साजै॥</p>
+    
+    <p class="verse fade-in">संकर सुवन केसरीनंदन। <br />तेज प्रताप महा जग बन्दन॥</p>
+    
+    <p class="verse fade-in">विद्यावान गुनी अति चातुर। <br />राम काज करिबे को आतुर॥</p>
+    
+    <p class="verse fade-in">प्रभु चरित्र सुनिबे को रसिया। <br />राम लखन सीता मन बसिया॥</p>
+    
+    <p class="verse fade-in">सूक्ष्म रूप धरि सियहिं दिखावा। <br />बिकट रूप धरि लंक जरावा॥</p>
+    
+    <p class="verse fade-in">भीम रूप धरि असुर संहारे। <br />रामचंद्र के काज संवारे॥</p>
+    
+    <p class="verse fade-in">लाय सजीवन लखन जियाये। <br />श्रीरघुबीर हरषि उर लाये॥</p>
+    
+    <p class="verse fade-in">रघुपति कीन्ही बहुत बड़ाई। <br />तुम मम प्रिय भरतहि सम भाई॥</p>
+    
+    <p class="verse fade-in">सहस बदन तुम्हरो जस गावैं। <br />अस कहि श्रीपति कंठ लगावैं॥</p>
+    
+    <p class="verse fade-in">सनकादिक ब्रह्मादि मुनीसा। <br />नारद सारद सहित अहीसा॥</p>
+    
+    <p class="verse fade-in">जम कुबेर दिगपाल जहां ते। <br />कबि कोबिद कहि सके कहां ते॥</p>
+    
+    <p class="verse fade-in">तुम उपकार सुग्रीवहिं कीन्हा। <br />राम मिलाय राज पद दीन्हा॥</p>
+    
+    <p class="verse fade-in">तुम्हरो मंत्र बिभीषन माना। <br />लंकेस्वर भए सब जग जाना॥</p>
+    
+    <p class="verse fade-in">जुग सहस्र जोजन पर भानू। <br />लील्यो ताहि मधुर फल जानू॥</p>
+    
+    <p class="verse fade-in">प्रभु मुद्रिका मेलि मुख माहीं। <br />जलधि लांघि गये अचरज नाहीं॥</p>
+    
+    <p class="verse fade-in">दुर्गम काज जगत के जेते। <br />सुगम अनुग्रह तुम्हरे तेते॥</p>
+    
+    <p class="verse fade-in">राम दुआरे तुम रखवारे। <br />होत न आज्ञा बिनु पैसारे॥</p>
+    
+    <p class="verse fade-in">सब सुख लहै तुम्हारी सरना। <br />तुम रक्षक काहू को डर ना॥</p>
+    
+    <p class="verse fade-in">आपन तेज सम्हारो आपै। <br />तीनों लोक हांक तें कांपै॥</p>
+    
+    <p class="verse fade-in">भूत पिसाच निकट नहिं आवै। <br />महाबीर जब नाम सुनावै॥</p>
+    
+    <p class="verse fade-in">नासै रोग हरै सब पीरा। <br />जपत निरंतर हनुमत बीरा॥</p>
+    
+    <p class="verse fade-in">संकट तें हनुमान छुड़ावै। <br />मन क्रम बचन ध्यान जो लावै॥</p>
+    
+    <p class="verse fade-in">सब पर राम तपस्वी राजा। <br />तिन के काज सकल तुम साजा॥</p>
+    
+    <p class="verse fade-in">और मनोरथ जो कोई लावै। <br />सोइ अमित जीवन फल पावै॥</p>
+    
+    <p class="verse fade-in">चारों जुग परताप तुम्हारा। <br />है परसिद्ध जगत उजियारा॥</p>
+    
+    <p class="verse fade-in">साधु-संत के तुम रखवारे। <br />असुर निकंदन राम दुलारे॥</p>
+    
+    <p class="verse fade-in">अष्ट सिद्धि नौ निधि के दाता। <br />अस बर दीन जानकी माता॥</p>
+    
+    <p class="verse fade-in">राम रसायन तुम्हरे पासा। <br />सदा रहो रघुपति के दासा॥</p>
+    
+    <p class="verse fade-in">तुम्हरे भजन राम को पावै। <br />जनम-जनम के दुख बिसरावै॥</p>
+    
+    <p class="verse fade-in">अन्तकाल रघुबर पुर जाई। <br />जहां जन्म हरि-भक्त कहाई॥</p>
+    
+    <p class="verse fade-in">और देवता चित्त न धरई। <br />हनुमत सेइ सर्ब सुख करई॥</p>
+    
+    <p class="verse fade-in">संकट कटै मिटै सब पीरा। <br />जो सुमिरै हनुमत बलबीरा॥</p>
+    
+    <p class="verse fade-in">जै जै जै हनुमान गोसाईं। <br />कृपा करहु गुरुदेव की नाईं॥</p>
+    
+    <p class="verse fade-in">जो सत बार पाठ कर कोई। <br />छूटहि बंदि महा सुख होई॥</p>
+    
+    <p class="verse fade-in">जो यह पढ़ै हनुमान चालीसा। <br />होय सिद्धि साखी गौरीसा॥</p>
+    
+    <p class="verse fade-in">तुलसीदास सदा हरि चेरा। <br />कीजै नाथ हृदय मंह डेरा॥</p>
+
+    <div class="decorative-line"></div>
+
+    <h2 class="section-title fade-in">दोहा</h2>
+    
+    <p class="verse fade-in">पवन तनय संकट हरन, मंगल मूरति रूप। <br />राम लखन सीता सहित, हृदय बसहु सुर भूप</p>
+
+    <div class="footer-ornament fade-in">
+      <img src="images/footer.png" alt="Decorative Footer" class="footer-image">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
